@@ -1,0 +1,17 @@
+h1, h2 {
+    text-align: center;
+}
+.newspaper {
+    display: inline-block;
+    /* column-count: 3; */
+    width: 30%;
+    height: 100vh;
+    top:0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img {
+    width: 100%;
+}
