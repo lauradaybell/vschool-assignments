@@ -1,0 +1,223 @@
+* {
+   flex-wrap: wrap;
+   display: flex;
+}
+.container {
+  height: 200px;
+  width: 300px;
+  border: 5px solid black;
+  margin: 30px;
+  padding: 0px;
+  display: flex;
+  
+}
+.france {
+  height: 200px;
+  width: 100px;
+  display: block;
+}
+.germany {
+    height: 33.3%;
+    width: 100%;
+    display: inline-block;
+}
+.madagascar-block {
+    height: 100%;
+    width: 30%;
+}
+.madagascar-stripe {
+    height: 100%;
+    width: 70%;
+}
+.madagascar {
+    height: 50%;
+    width: 100%;
+    display: block;
+}
+.switzerland {
+    height: 100%;
+    width: 100%;
+}
+.switzerland-row {
+    position: absolute;
+    margin-left: 81px;
+    margin-top: 79px;
+    height: 40px;
+    width: 132px;
+}
+.switzerland-column {
+    position: absolute;
+    height: 126px;
+    width: 43px;
+    margin-left: 124px;
+    margin-top: 36px;
+}
+.sweden {
+    height: 100%;
+    width: 100%;
+    background-color: #1565c0d9
+}
+.sweden-row {
+    position: absolute;
+    margin-top: 78px;
+    height: 41px;
+    width: 300px;
+}
+.sweden-column {
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    margin-left: 76px;
+}
+.gambia {
+    height: 33%;
+    width: 100%;
+    display: block;
+}
+.gambia-mid {
+    height: 24%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tonga {
+    height: 100%;
+    width: 100%;
+}
+.tonga-block {
+    height: 100px;
+    width: 128px;
+    position: absolute;
+}
+.tonga-row {
+    height: 22px;
+    width: 60px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 34px;
+}
+.tonga-column {
+    height: 60px;
+    width: 24px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 48px;
+}
+.japan {
+    height: 120px;
+    width: 120px;
+    border-radius: 64%;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 36px;
+}
+.greece {
+    height: 100%;
+    width: 100%;
+}
+.greece-corner {
+    height: 110px;
+    width: 100px;
+    position: absolute;
+}
+.greece-column {
+    height: 110px;
+    width: 23px;
+    position: absolute;
+    margin-left: 40px;
+}
+.greece-corner-row {
+    height: 23px;
+    width: 103px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.greece-one {
+    margin-left: 103px;
+    width: 200px;
+    height: 21px;
+    position: absolute;
+    margin-top: 19px;
+}
+.greece-two {
+    margin-left: 103px;
+    margin-top: 62px;
+    width: 200px;
+    position: absolute;
+    height: 21px;
+}
+.greece-three {
+    width: 300px;
+    position: absolute;
+    height: 21px;
+    margin-top: 108px;
+}
+.greece-four {
+    width: 300px;
+    height: 21px;
+    position: absolute;
+    margin-top: 156px;
+}
+.niger {
+    height: 33.3%; 
+    width: 100%;
+    display: block;
+}
+.niger-circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 73px;
+    margin-left: 121px;
+
+}
+.maldives {
+    height: 100%;
+    width: 100%;
+}
+.maldives-stripe {
+    height: 100px;
+    width: 225px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 33px;
+}
+.maldives-moon {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 59px;
+    margin-left: 114px;
+}
+.maldives-circle {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 59px;
+    margin-left: 130px;
+}
+.red {
+    background-color: red;
+}
+.white {
+    background-color: white;
+}
+.blue {
+    background-color: blue;
+}
+.black {
+    background-color: black;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: #ef6c00
+}
