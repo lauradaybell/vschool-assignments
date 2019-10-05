@@ -51,11 +51,13 @@
 
 function mostOftenUsedLetter(str) {
     let counter = 0;
-    const array = []
+    str = str.split();
     for (i = 0; i < str.length; i++) {
-     str.split() = "";
-     
+        for (x = 0; x <str.length; x++)
+        if (str[i] = str[x]) {
+            count = count + 1
+        }
      console.log(str)
     }
 }
-mostOftenUsedLetter("book")
+console.log(mostOftenUsedLetter("book"))
