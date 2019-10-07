@@ -1,6 +1,7 @@
 * {
-   flex-wrap: wrap;
-   display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 0px;
 }
 .container {
   height: 200px;
@@ -55,7 +56,7 @@
 .sweden {
     height: 100%;
     width: 100%;
-    background-color: #1565c0d9
+    background-color: #1565c0d9;
 }
 .sweden-row {
     position: absolute;
@@ -219,5 +220,5 @@
     background-color: green;
 }
 .orange {
-    background-color: #ef6c00
+    background-color: #ef6c00;
 }
