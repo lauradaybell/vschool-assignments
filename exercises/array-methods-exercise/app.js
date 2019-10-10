@@ -1,5 +1,5 @@
-var fruit = ["banana", "apple", "orange", "watermelon"];
-var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
+const fruit = ["banana", "apple", "orange", "watermelon"];
+const vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 
 function changeArrays(fruit, vegetables) {
         vegetables.pop();
@@ -11,7 +11,7 @@ function changeArrays(fruit, vegetables) {
         console.log(fruit);
         console.log(vegetables.length);
         vegetables.push(3);
-        let food = fruit.concat(vegetables);
+        const food = fruit.concat(vegetables);
         console.log(food);
         food.splice(4,2);
         console.log(food);
@@ -21,3 +21,5 @@ function changeArrays(fruit, vegetables) {
         console.log(foods)
 }
 changeArrays(fruit, vegetables)
+
+

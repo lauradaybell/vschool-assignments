@@ -1,0 +1,32 @@
+.nav {
+    position: fixed;
+    top: 30px;
+    background-color: #80808069;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+}
+.post {
+    display: inline-block;
+    
+
+}
+img {
+    float: left;
+    height: 100px;
+    margin: 10px;
+}
+header {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 34px;
+}
+.parent {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+
+}

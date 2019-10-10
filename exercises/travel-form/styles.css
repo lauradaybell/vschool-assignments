@@ -1,0 +1,42 @@
+#div {
+    height:30px;
+    /* margin:30px; */
+
+}
+body {
+    
+    background-color: #f5deb342;
+    font-size: 50px;
+    text-align: center;
+
+}
+option {
+    height: 50px;
+}
+select {
+    height: 50px;
+    width: 100px;
+    background-color: antiquewhite;
+}
+
+button {
+    height: 66px;
+    width: 150px;
+    
+}
+
+#name {
+    height: 66px;
+    width: 1000px;
+    display:inline-block;
+    font-size: 50px;
+}
+#name.input {
+    width: 150px;
+}
+input {
+    height: 50px;
+}
+#button {
+    margin-top: 850px;
+}

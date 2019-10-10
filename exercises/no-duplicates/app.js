@@ -1,28 +1,18 @@
-// let input = "bookkeeper"
+// separate letters into individual array items
+// loop and check index.  If indexOf === -1, push.
 
-// function removeDuplicates(input) {
-//     for (i = 0; i < input.length; i++) {
-//        for (x = (i + 1); x < input.length; x++) {
-//            if (i = x) {
-//                x = ("")
-//            }
-//            console.log(input)
-//        }
-//     }
-//     return input
+function removeDuplicates(input) {
+    const charArray = input.split("");
+    const newArray = [];
+    for (i = 0; i < charArray.length; i++) {
+           if (newArray.indexOf(charArray[i]) === -1) {
+               newArray.push(charArray[i])
+          
+        //    console.log(newArray)
+       }
+    }
+    return newArray
     
-// }
-// console.log(removeDuplicates("bookkeeper"))
+}
+console.log(removeDuplicates("bookkeeper"))
 
-// function removeDups(input) {
-//     let charArray = input.split();
-//       for (let i = 0; i < charArray.length; i++) {
-//         for (let x = i + 1; x < charArray.length; x++)
-//           if (charArray[i] == charArray[j]) {
-//             charArray.splice(j, 1);
-//             j--;
-//           }
-//       }
-//       return charArray.join();
-//     }
-//     console.log(removeDups("book"));

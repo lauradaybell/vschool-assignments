@@ -1,0 +1,16 @@
+body {
+    background-color: antiquewhite;
+    
+}
+
+input {
+    height: 50px;
+    width: 100px;
+    background-color: lightgrey;
+    margin: 50px;
+}
+button {
+    background-color: #bd3939;
+    height: 50px;
+    width: 100px;
+}

@@ -23,21 +23,42 @@
 // console.log(capitalizeAndLowerCaseSplit("aldsjf;ldjskf||alkdsjf;ksdjf"))
 
 function capitalizeNextSpace(str) {
-    for (i = 0; i < str.length; i++) {
-        str.slice();
-        if (str[i-1] === " ") {
-            
-        }
+    // for (i = 0; i < str.length; i++) {
+        // str.slice();
+        
+       const lower =str.toLowerCase().slice();
+       const upper = []
+          
+    //    console.log(lower);
+       upper.push(lower[0].toUpperCase())
+       for (i = 1; i < lower.length; i++) {
+           if (lower[i - 1] === " ") {
+               upper.push(lower[i].toUpperCase())
+           } else {
+               upper.push(lower[i])
+           }
+       } 
+    //    console.log(upper)
+       let newString = ""
+       for (i = 0; i < upper.length; i++) {
+           newString += upper[i]
+       }
+       console.log(newString)
+
+    //     if (lower[i-1] === " ") {
+    //         let caps = lower.toUpperCase(lower[i]);
+    //     } 
 
     //     if (str[i] === " ") {
     //         str[i + 1].toUpperCase();
             
     //     } else {
-    //         str[i].toLowerCase()
-           
+    //         str[i].toLowerCase()         
     //     }
     // }
     // return str
-    
-}
-console.log(capitalizeNextSpace("a new DAy is Dawning"))
+    }
+
+
+
+capitalizeNextSpace("a new DAy is Dawning")
