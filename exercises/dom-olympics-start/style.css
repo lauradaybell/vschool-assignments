@@ -3,9 +3,20 @@
     align-items: center;
     flex-direction: column;
 }
+.header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 
+h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 .name {
     color: peachpuff;
+    flex-direction: row;
 }
 
 #messages {
@@ -34,4 +45,10 @@
 .left {
     align-self: flex-start;
     background-color: burlywood;
+}
+.right.theme-two {
+    background-color: red;
+}
+.left.theme-two {
+    background-color: gray;
 }

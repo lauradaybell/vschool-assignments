@@ -1,0 +1,159 @@
+body {
+    height: 100%;
+    background-color: antiquewhite;
+    margin: 0px;    
+}
+nav {
+    width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9487af;
+    text-align: center;
+    
+}
+.active {
+    text-decoration: none;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+
+li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+#nature {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,139px);
+    grid-gap: 5px;
+}
+.child1 {
+    background-color: grey;
+}
+.child2 {
+    background-color: #6633999e;
+}
+.child3 {
+    background-color: silver;
+}
+.child4 {
+    background-color: lightblue;
+}
+.picture {
+    height: 98%;
+    width: 27%;
+    float: left;
+    margin-right: 5px;
+}
+p {
+    margin: 5px;
+    padding: 5px;
+}
+header {
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.health-pic {
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+.peace-pic {
+    float: right;
+    width: 30%;
+}
+.healing-pic {
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+@media (min-width: 600px){
+    ul {
+        display: inline-block;
+        width: 100%;
+        font-size: 37px;
+       
+    }
+    li {
+        display: inline-block;
+    }
+   
+     #nature {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .container {
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    section {
+        background-size: cover;
+    }
+    .health {
+        font-size: xx-large;
+    }
+    h5 {
+        font-size: larger;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    ul {
+        display: inline-block;
+        width: 100%;
+        font-size: 39px;
+        
+    }
+    li {
+        display: inline-block;
+    }
+    
+    #nature {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .container {
+        grid-gap: 42px;
+        margin: 20px;
+    }
+}
