@@ -1,18 +1,19 @@
 // function collectAnimals(...str) {  
+//     console.log([...str])
 //     return[...str]
 // }
 
 // collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
-// // // ["dog", "cat", "mouse", "jackolope", "platypus"]
+// // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
 // function combineFruit(fruit, sweets, vegetables){
     
      
-//         console.log(fruit = [fruit],
-//         sweets = [sweets],
-//         vegetables = [vegetables])
-//         let {fruit, sweets, vegetables} = food
-//         console.log(food)
+//         (fruit = [...fruit],
+//         sweets = [...sweets],
+//         vegetables = [...vegetables])
+//         let food = [...fruit, ...sweets, ...vegetables]
+//         return food
 // }
 
 
@@ -39,13 +40,29 @@
 //     return firstItem
 // }
 
-const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
+// const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
 
-function returnFavorites(arr){
+// function returnFavorites(arr){
+//     const [firstFav, secondFav, thirdFav] = favoriteActivities
+//     console.log(`My top three favorite activities are ${firstFav}, ${secondFav}, and ${thirdFav}.`)
+// }
+
+// returnFavorites(favoriteActivities)
+// const newArray = []
+// function combineAnimals(...arr) {  
+//     for (let i = 0; i < arr.length; i++) {
+//         newArray.push(...arr[i])
+//     }
     
-    let {...arr} = favoriteActivities;
-    /*your code here*/
-    return "My top three favorite activities are, " + firstFav + ", " + secondFav + ", and " + thirdFav.
-}
+//     console.log(newArray)
 
-returnFavorites(favoriteActivities)
+
+// }
+
+// const realAnimals = ["dog", "cat", "mouse"];
+// const magicalAnimals = ["jackolope"];
+// const mysteriousAnimals = ["platypus"];
+
+// combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals); 
+
+// ["dog", "cat", "mouse", "jackolope", "platypus"]

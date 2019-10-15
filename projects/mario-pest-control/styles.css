@@ -46,14 +46,12 @@ img{
     color: darkred;
     text-decoration: underline;
     font-size: xx-large;
+    
 }
 .foot {
     display:block;
 }
-footer {
-    position:fixed;
-    bottom:0;
-}
+
 @media (min-width: 600px) {
     .title {
         display:grid;
@@ -70,7 +68,7 @@ footer {
     .get-me{
         display: grid;
         grid-template-columns: 1fr 1fr 1.15fr 1fr;
-        grid-template-rows: 77px;
+        grid-template-rows: repeat (3, 77px);
         margin-right: 31px;
     }
     .total{
@@ -108,7 +106,36 @@ footer {
     .baddies {
         grid-template-rows: repeat(3,109px);
     }
+    
+}
+@media (min-width: 1050px) {
+    img {
+        width: 41%;
+
+    }
+}
+@media (min-width: 1226px) {
+    img {
+        width: 35%;
+    }
+}
+@media (min-width: 1350px) {
+    img {
+        width: 32%;
+    }
+}
+@media (min-width: 1510px) {
+    img {
+        width: 28%;
+    }
+}
+@media (min-width: 1856px) {
+    img {
+        width: 25%;
+    }
     #result {
-        color: #FBD000;
+        font-size: 48px;
+        width: 500px;
+        height: 56px;
     }
 }
