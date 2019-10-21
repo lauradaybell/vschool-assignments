@@ -1,0 +1,53 @@
+{
+    "appetizers": [{
+            "name": "freshSpringRolls",
+            "ingredients": ["wrapper", "shrimp", "cabbage", "carrots"],
+            "description": "Delicious fresh spring rolls"
+        },
+        {   "name": "nachos",
+            "ingredients": ["tortilla chips", "salsa", "shredded beef", "cheese"],
+            "description": "Hot crispy, oozy nachos"
+        }
+    ],
+    "coldSandwiches": [{
+            "name": "BLT",
+            "ingredients":["bacon", "lettuce", "tomatoes", "bread", "mayonaise"],
+            "description":"Crispy bacon and lettuce, juicy tomatoes... A perfect sandwich"
+         },
+        {   "name": "Peanut Butter and Jelly",
+            "ingredients":["bread", "peanut butter", "jelly"],
+            "description": "Childhood...."
+
+        }],
+    "hotSandwiches": [{
+            "name": "toasted cheese",
+            "ingredients":["bread", "pickles", "cheese", "mayonaise"],
+            "description":"Childhood, but with a little bite of pickles"
+        },
+        {   "name": "ham and cheese melt",
+            "ingredients":["bread", "ham", "cheese"],
+            "description":"melty cheese and salty ham... heaven."
+        }
+    ],
+    "desserts": [{
+            "name": "icecream",
+            "ingredients":["cream", "sugar", "anything else"],
+            "description": "any sweet, creamy flavor you want"
+        },
+        {   "name":"apple pie",
+            "ingredients":["crust", "filling"],
+            "description":"get mom to make it."
+
+        }],
+    "drinks": [{
+            "name": "water",
+            "ingredients":["water"],
+            "description":"kind of boring, but needed for life"
+        },
+        {   "name": "apple juice",
+            "ingredients":["apple juice"],
+            "description":"an apple that's been juiced"
+
+        }]
+
+}

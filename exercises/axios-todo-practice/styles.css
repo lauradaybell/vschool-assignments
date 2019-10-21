@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: #faebd78c;
+}
+
+img {
+    
+    width: 150px;
+    float:left;
+}
+h1 {
+    text-align: center;
+}
+
+#items{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    grid-gap: 16px;
+}
+.delete {
+    height: 30px;
+    width: 60px;
+    border-radius: 40px;
+    background-color: #0000ff40;
+}
+/* .outside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+} */
+div {
+    border: 2px solid black;
+}
