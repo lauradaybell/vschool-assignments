@@ -172,7 +172,13 @@ function rockGame() {
     let rockChoice = ask.keyIn(`As you inspect the rocks more closely, you see that they are different color and each has a different amount of light emitting from its surface.  You somehow understand that you'll only get one chance...\n Will you pick up the [b] blue rock, [g] green rock, or [r] red rock?\n`, {limit: `bgr`})
     let chance = Math.floor(Math.random() * 3);
          if (chance === 2) {
-             getReward(rockChoice)
+             if (rockChoice === 'b') {
+                 getReward("blue rock")
+            } else if (rockChoice === 'g') {
+                getReward("green rock")
+            } else {
+                getReward("red rock")
+            }
          } else {
              console.log(`The rock burns your hand as you pick it up.  You quickly drop it and continue on your quest.\n`)
          }
@@ -181,8 +187,10 @@ function rockGame() {
 
 function getReward(rock) {
     let object = Math.floor(Math.random() * rewards.length)
-    console.log(`You feel drawn to ${rock}.  As you pick it up it transorms into your hand and becomes ${object}\n`)
-    bag.push(object)
-    return rewards[reward]
+    // console.log(object)
+    console.log(`You feel drawn to ${rock}.  As you pick it up it transorms into your hand and becomes ${rewards[object].name}\n`)
+    bag.push(rewards[object].name)
+    // return rewards[i]
 }
-// integerate a way to use the items. 
+
+

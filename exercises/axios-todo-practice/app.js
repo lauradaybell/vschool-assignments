@@ -26,31 +26,32 @@ axios.get("https://api.vschool.io/laura/todo").then((response) => {
 
 function makeTodo(item) {
     let h3 = document.createElement("h3");
-    let h5 = document.createElement("h5")
-    const img = document.createElement("img")
-    const p = document.createElement("p")
-    const container = document.createElement("div")
-    const button = document.createElement("button")
-    const checkbox = document.createElement("input")
-    const label = document.createElement("label")
+    let h5 = document.createElement("h5");
+    const img = document.createElement("img");
+    const p = document.createElement("p");
+    const container = document.createElement("div");
+    const button = document.createElement("button");
+    const checkbox = document.createElement("input");
+    const label = document.createElement("label");
     checkbox.type="checkbox"
     checkbox.name="name"
     checkbox.id= item._id
     checkbox.value="value"
-    checkbox.addEventListener("change", function(e) {
-        e.preventDefault();
-        changeStatus(item) })
-
-    // checkbox.addEventListener("change", function(e) {
-    //     response.data.completed = true
-    // })
-    // label.textContent="Complete"
+    checkbox.addEventListener("change", e => {
+        axios.put("https://api.vschool.io/laura/todo/" + item._id, {completed: e.target.checked}).then (response =>  {h3.style.textDecoration = response.data.completed ? "line-through" : "none"})
+    })
     h3.textContent = item.title
     h5.textContent = item.price
     p.textContent = item.description
     img.src = item.imgUrl
     button.className = "delete"
     button.textContent = `DELETE`
+    button.addEventListener('click', () => {
+        axios.delete("https://api.vschool.io/laura/todo/" + item._id).then(response => {
+            console.log(response.data.msg)
+            constainer.remove()
+        })
+        })
     label.appendChild(document.createTextNode(`completed`))
     container.appendChild(h3)
     container.appendChild(h5)
@@ -64,38 +65,6 @@ function makeTodo(item) {
     if(item.completed === true) {
         h3.innerHTML = `<s>${item.title}</s>`
     } 
-}
- 
 
-
-function changeStatus(item) {
-    const isCompleted = {
-        completed:true
-    }
-    const notCompleted = {
-        completed:false
-    }
-    if (item.completed) {
-        axios.put("https://api.vschool.io/laura/todo/" + item._id, notCompleted).then((response) => {
-        response.item.completed = !response.item.completed
-        console.log("not completed")
-        h3.innerHTML = `${item.title}`
-        })
-    } else {
-        axios.put("https://api.vschool.io/laura/todo/" + item._id, isCompleted).then((response) => {
-        response.item.completed = !response.item.completed
-        console.log("completed") })
-        h3.innerHTML = `<s>${item.title}</s>`
-        
-    }
 }
 
-    
-
-
-// if(todo.completed === true) {
-//     h3.innerHTML = `<s>${todo.title}</s>`
-// } else {
-//     h3.textContent = todo.title
-// }
-// img.src = todo.imgUrl

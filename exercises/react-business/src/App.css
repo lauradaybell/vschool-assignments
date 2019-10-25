@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    font-size: 25px;
+}
+
+.contacts {
+    display: block;
+    text-align: center;
+    
+}
+.footer {
+    background-color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+   
+}
+.header {
+    background-color: antiquewhite;
+    display: inline;
+    
+}
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+.pic {
+    float: left;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.Products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 
+}
+.main {
+    display: grid;
+    grid-template-columns: 500px auto 
+}
+.products {
+    grid-column: 1;
+}
+.services {
+    grid-column: 2;
+}
+.ExtraPics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+}
+
+
