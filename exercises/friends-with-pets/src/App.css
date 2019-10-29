@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    
+}
+.friends {
+    background-color: lightgray;
+    border: 2px solid black;
+}
+.petName {
+    font-weight: 700;
+    color:#2b882b;
+}
+.petBreed {
+    color: #0000ff94;
+}
