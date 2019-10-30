@@ -10,7 +10,7 @@ const BlogList = () => {
                                                    />))
                                               
     return (
-        <div>
+        <div className='container'>
             {mappedPosts}
         </div>
     )
