@@ -1,0 +1,17 @@
+.enemies {
+  
+    height: 200px;
+    width: 200px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+}
+h5 {
+    margin-top:0px;
+    width: 200px;
+    background-color: lightblue;
+    
+}
