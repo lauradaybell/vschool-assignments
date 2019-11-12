@@ -15,11 +15,13 @@ function palindromeFinder(str) {
         // console.log(newString)
     }
     if (revString === newString) {
-        console.log(true)
+        // console.log(true)
+        return true;
     } else {
-        console.log(false)
+        // console.log(false)
+        return false;
     }
 }
-palindromeFinder("Star Rats")
-palindromeFinder("palindrome")
+console.log(palindromeFinder("Star Rats"));
+console.log(palindromeFinder("palindrome"));
 palindromeFinder("I madam, I made radio! So I dared! Am I mad?? Am I?!")
