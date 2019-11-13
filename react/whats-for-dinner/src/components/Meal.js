@@ -11,12 +11,13 @@ const Meal = (props) => {
     return (
         <div className='cards'>
 
-            <h3 className='title'>{props.title}</h3>
-            <p className= 'ingredients'>{props.ingredients}</p>
-            {
-                props.thumbnail !== ''? <img className= 'returnedImg' src={props.thumbnail} alt="pic"/> : null
-            }
             
+            
+            {
+                props.thumbnail !== ''? <img className= 'returnedImg' src={props.thumbnail} alt="pic"/> : <img className='returnedImg' src="http://www.soidergi.com/wp-content/uploads/ph/photostock-vector-cartoon-cute-stove-oven-appliance-vector-illustration.jpg" alt='pic'/>
+            }
+            <h3 className='title'>{props.title}</h3>
+            <p className= 'ingredients'><strong>Ingredients:</strong><br/>{props.ingredients}</p>
             <button className = 'link'><a href={props.href}>Click for Recipe</a></button>
             
 
