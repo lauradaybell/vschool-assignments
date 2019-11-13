@@ -5,7 +5,7 @@ import {withMeal }from '../context/MealProvider'
 
 
 const MealList = (props) => {
-    const mappedMeals = props.meals.map(((meal, i) => <Meal {...meal} key={i}/>))
+    const mappedMeals = props.meals.map(((meal, i) => <Meal showButton="false" {...meal} key={i}/>))
     return(
         <div className='randomMeal'>
             {mappedMeals}

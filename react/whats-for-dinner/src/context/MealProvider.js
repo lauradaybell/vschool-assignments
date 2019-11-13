@@ -22,13 +22,13 @@ class MealProvider extends Component {
     constructor() {
         super()
         this.state ={
-            meals: [],
+            meals:  [],
             options: [],
             title: 'title',
             ingredients: 'ingredients',
             href: 'href',
             thumbnail: 'thumbnail',
-            q:''
+            q:'',
 
         }
     }
@@ -40,29 +40,29 @@ class MealProvider extends Component {
     }
 
     componentDidMount() {
-       
         this.getList()
+        
     }
 
     getList = () => {
-        foodAxios.get(`https://recipe-puppy.p.rapidapi.com`)
-            .then(res => {
-                this.setState({
-                    meals: res.data.results
-                })
-                console.log(res)
-            })
-            .catch(err => {
-                console.log(err)
-                console.log("it did not work")
-            })
+        this.setState({
+           meals: JSON.parse(localStorage.getItem('favorites')) || []
+        })
     }
+
+    handleSave = (obj) => {
+        let newMeal = obj
+        this.setState(prevState => ({
+            meals: [...prevState.meals, newMeal]   
+        }), () => localStorage.setItem('favorites', JSON.stringify(this.state.meals)))
+    }
+
     handleSubmit = e => {
         e.preventDefault()
         e.target.reset()
         const {q} = this.state
 
-        // }
+        
         foodAxios.get(`https://recipe-puppy.p.rapidapi.com`,{
             params: {
                 q
@@ -90,7 +90,8 @@ class MealProvider extends Component {
                     href: this.state.href,
                     thumbnail: this.state.thumbnail,
                     handleChange: this.handleChange,
-                    handleSubmit: this.handleSubmit
+                    handleSubmit: this.handleSubmit,
+                    handleSave: this.handleSave
                     
                 }}>
                 {this.props.children}
