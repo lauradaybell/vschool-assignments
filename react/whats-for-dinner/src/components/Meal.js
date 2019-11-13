@@ -6,15 +6,19 @@ const Meal = (props) => {
         title: props.title,
         ingredients: props.ingredients,
         href: props.href,
-        img:props.thumbnail
+        thumbnail:props.thumbnail
     }
     return (
         <div className='cards'>
 
-            <h3>{props.title}</h3>
-            <p>{props.ingredients}</p>
-            <a href={props.href}>Click for Recipe</a>
-            <img className= 'returnedImg' src={props.thumbnail} alt="pic"/>
+            <h3 className='title'>{props.title}</h3>
+            <p className= 'ingredients'>{props.ingredients}</p>
+            {
+                props.thumbnail !== ''? <img className= 'returnedImg' src={props.thumbnail} alt="pic"/> : null
+            }
+            
+            <button className = 'link'><a href={props.href}>Click for Recipe</a></button>
+            
 
             {
                 props.showButton === "true"

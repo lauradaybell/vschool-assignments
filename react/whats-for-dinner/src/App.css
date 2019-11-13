@@ -3,33 +3,72 @@
     margin: 0;
     padding: 0
 }
+.route {
+    color: #C3C0AE;
+    text-decoration: none;
+}
+.link {
+    background-color: #A65B3C;
+    text-decoration: none;
+    width: 84px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    border-radius: 40px;
+    border: 2px solid #2E2E1A;
+    
+}
+a {
+    color: #2E2E1A;
+    text-decoration: none;
+    font-weight:bold;
+}
+.title {
+    font-size: 30px;
+    padding: 10px;
+}
+.ingredients {
+    padding: 10px;
+    font-size: 18px;
+}
 
 nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 165px;
-    border: 1px solid black;
-    background-color: #a96666;
+    border: 1px solid #2E2E1A;
+    background-color: #A65B3C;
     font-size: 43px;
+    color: #C3C0AE;
 
 }
 .saveButton {
-    border: 1px solid black;
+    border: 1px solid #2E2E1A;
     width: 122px;
     height: 30px;
     border-radius: 30px;
+    background-color: #A65B3C;
+    border: 2px solid #2E2E1A;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding-left: 38px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #2E2E1A;
 }
 body {
-    background-color: #d8baae;
+    background-color: #C3C0AE;
 }
 .cards {
-    border: 10px solid rebeccapurple;
+    border: 10px solid #2E2E1A;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #949985;
 }
 
 
@@ -41,26 +80,21 @@ img {
     width: 77%;
     margin-left: 31px;
     display: inline-block;
-    
+    margin-bottom: 180px;  
 }
-.secondPic {
-    width: 78%;
-    margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 180px;
-    
-}
+
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 180px;
-    border: 1px solid black;
-    background-color: #a96666;
+    border: 1px solid #2E2E1A;
+    background-color: #A65B3C;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 44px;
+    color: #C3C0AE;
 }
 
 
@@ -76,17 +110,14 @@ form {
     border-radius: 32px;
     font-size: 25px;
     margin-top: 24px;
-    background-color: #a9666640;
-    border: 2px solid black;
-    box-shadow: 9px 3px 5px black;
+    background-color: #949985;
+    border: 2px solid #2E2E1A;
+    box-shadow: 9px 3px 5px #2E2E1A;
     margin-bottom: 10px;
 
 }
 .input {
-   
     text-align: center;
-   
-    
 }
 input {
     border-radius: 25px;
@@ -96,8 +127,8 @@ input {
     margin-bottom: 10px;
     height: 100px;
     font-size: 30px;
-    background-color: #a9666640;
-    border: 3px solid black;
+    background-color: #949985;
+    border: 3px solid #2E2E1A;
 }
 main {
     position: relative;
@@ -118,17 +149,18 @@ main {
 
 .returnedImg {
     width: 135px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    display: flex;
+    margin: auto;
+    padding: 18px;
 }
 
 @media (min-width: 740px) {
     .footer {
         height: 78px;
     }
-    .secondPic {
-        margin-bottom: 78px;
+    .firstPic {
+        display: flex;
+        margin: auto;
     }
     nav {
         height: 75px;
@@ -138,8 +170,8 @@ main {
         flex-direction: row;
         justify-content: space-around;
         margin-bottom: 10px;
-    
     }
+    
     .randomMeal {
         grid-template-columns: 1fr 1fr;
         padding-bottom: 90px;
@@ -150,53 +182,22 @@ main {
 @media (min-width: 955px) {
     
     input {
-        border-radius: 25px;
-        padding: 20px;
         width: 600px;
-        margin-bottom: 10px;
-        height: 100px;
-        font-size: 30px;
-        background-color: #a9666640;
-        border: 3px solid black;
     }
     .submitButton {
         margin-top: 84px;
     }
-    input {
-        border-radius: 25px;
-        padding: 20px;
-        width: 600px;
-        margin-bottom: 10px;
-        height: 100px;
-        font-size: 30px;
-        background-color: #a9666640;
-        border: 3px solid black;
-    }
+    
     .randomMeal{
-        
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5px;
         padding-bottom: 100px;
     }
     
-    .returnedImg {
-        width: 135px;
-        margin-left: 25px;
-        margin-bottom: 20px;
-        margin-top: 5px;
-    }
-    nav {
-        height: 75px;
-        font-size: 47px;
-        align-items: center;
-        width: 100%;
-    
-    }
     .footer {
         display: flex;
         justify-content: space-around;
-        border: 1px solid black;
-        background-color: #a96666;
+        border: 1px solid #2E2E1A;
         height: 75px;
         font-size: 47px;
         align-items: center;
@@ -212,9 +213,7 @@ main {
     .firstPic {
         display: block;
         margin: auto;
+        padding-bottom: 100px;
     }
-    .secondPic {
-        display: block;
-        margin: auto;
-    }
+    
 }

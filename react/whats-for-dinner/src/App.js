@@ -16,8 +16,8 @@ const App = () => {
             <Navbar />
             <Switch className='content'>
                 <Route exact path='/' component={MealHome}/>
-                <Route path ='/meals' component={Meals} />
-                <Route path = '/mealList' component={MealList} />
+                <Route  path ='/meals' component={Meals} />
+                <Route  path = '/mealList' component={MealList} />
             </Switch>
             <Footer />
         </main>
