@@ -18,6 +18,9 @@
     border: 2px solid #2E2E1A;
     
 }
+.tryAgain {
+    width: 80%;
+}
 a {
     color: #2E2E1A;
     text-decoration: none;
@@ -33,6 +36,27 @@ a {
     font-size: 18px;
     text-align: left;
 }
+.formTitle {
+    text-align: center;
+    font-weight: bold;
+}
+.ownFormInput {
+    height: 12%;
+    display: flex;
+    font-size: 9px;
+}
+.myOwnButton {
+    border: 2px solid #2E2E1A;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 41px;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 150px;
+    background-color: #949985;
+}
 
 nav {
     display: flex;
@@ -41,7 +65,7 @@ nav {
     height: 165px;
     border: 1px solid #2E2E1A;
     background-color: #A65B3C;
-    font-size: 43px;
+    font-size: 35px;
     color: #C3C0AE;
 
 }
@@ -181,10 +205,27 @@ main {
         justify-content: space-around;
         margin-bottom: 10px;
     }
+    .myInput {
+        display: flex;
+        flex-direction: row;
+    }
     
     .randomMeal {
         grid-template-columns: 1fr 1fr;
         padding-bottom: 90px;
+    }
+    .ownFormInput {
+        height: 12%;
+        width: 250px;
+        font-size: 25px;
+    }
+    .myOwnButton {
+        width: 91px;
+        height: 49px;
+        font-size: 20px;
+    }
+    .formTitle {
+        font-size: xx-large;
     }
 
 }
@@ -215,8 +256,11 @@ main {
     
     input {
         width: 600px;
-        margin-left: 200px;
-        margin-right: 100px;
+        
+    }
+    .myInput {
+        display: flex;
+        justify-content: space-between;
     }
     .submitButton {
         margin-top: 84px;
@@ -253,4 +297,9 @@ main {
         width: 90%;
     }
     
+}
+
+.myOwnFormPage {
+    margin: auto;
+    width: 75%;
 }

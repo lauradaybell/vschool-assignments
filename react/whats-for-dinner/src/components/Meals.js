@@ -4,11 +4,11 @@ import SearchList from './SearchList'
 
 
 
-const Meals = () => {
+const Meals = (props) => {
     return (
-        <div>
+        <div className='tryAgain'>
             <MealForm />
-            <SearchList />
+            <SearchList myPath={props.location.pathname} />
         </div>
     )
 }

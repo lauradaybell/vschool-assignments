@@ -5,7 +5,7 @@ const MealForm = (props) => {
    
    
     return (
-        <div >
+        <div className='tryIt'>
             <form onSubmit={props.handleSubmit}
             className ='form' >
                 <div className='input'>

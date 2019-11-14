@@ -7,6 +7,7 @@ const Navbar = () =>{
     return (
         <nav>
             <Link className='route' to='/'>Home</Link>
+            <Link className='route' to='/ownMealForm'>My Recipes</Link>
             <Link className='route' to='/meals'>Search</Link>
             <Link className='route' to='/mealList'>Meal List</Link>
         </nav>

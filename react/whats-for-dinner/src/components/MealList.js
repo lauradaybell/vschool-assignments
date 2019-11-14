@@ -5,9 +5,10 @@ import {withMeal }from '../context/MealProvider'
 
 
 const MealList = (props) => {
-    const mappedMeals = props.meals.map(((meal, i) => <Meal showButton="false" {...meal} key={i}/>))
+    const mappedMeals = props.meals.map(((meal, i) => <Meal showButton="false" {...meal} key={i} myPath={props.location.pathname} />))
     return(
         <div className='randomMeal'>
+            {window.confirm("Please subscribe to our daily spam emails!!!!")}
             {mappedMeals}
         </div>
     )

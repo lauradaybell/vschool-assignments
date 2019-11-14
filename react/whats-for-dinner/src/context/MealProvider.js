@@ -24,10 +24,10 @@ class MealProvider extends Component {
         this.state ={
             meals:  [],
             options: [],
-            title: 'title',
-            ingredients: 'ingredients',
-            href: 'href',
-            thumbnail: 'thumbnail',
+            title: '',
+            ingredients: '',
+            href: '',
+            thumbnail: '',
             q:'',
 
         }
@@ -57,6 +57,20 @@ class MealProvider extends Component {
         }), () => localStorage.setItem('favorites', JSON.stringify(this.state.meals)))
     }
 
+
+    handleOwnSubmit = (e) => {
+        e.preventDefault()
+        e.target.reset()
+        const {title, ingredients, thumbnail} =this.state
+        let newOpt = {title, ingredients, thumbnail}
+        this.setState(prevState => ({
+            title:'',
+            ingredients:'',
+            thumbnail:'',
+            meals: [...prevState.meals, newOpt]
+        }), () => localStorage.setItem('favorites', JSON.stringify(this.state.meals)))}
+    
+    
     handleSubmit = e => {
         e.preventDefault()
         e.target.reset()
@@ -91,7 +105,8 @@ class MealProvider extends Component {
                     thumbnail: this.state.thumbnail,
                     handleChange: this.handleChange,
                     handleSubmit: this.handleSubmit,
-                    handleSave: this.handleSave
+                    handleSave: this.handleSave,
+                    handleOwnSubmit: this.handleOwnSubmit
                     
                 }}>
                 {this.props.children}

@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Meals from './components/Meals'
 import MealList from './components/MealList'
 import Ads from './components/Ads'
+import OwnMealForm from './components/OwnMealForm'
 
 import './App.css'
 
@@ -17,8 +18,9 @@ const App = () => {
             <div className='screen'>
                 <Switch className='content'>
                     <Route exact path='/' component={MealHome}/>
-                    <Route  path ='/meals' component={Meals} />
-                    <Route  path = '/mealList' component={MealList} />
+                    <Route path='/ownMealForm' render={rProps => <OwnMealForm {...rProps} />}/>
+                    <Route  path ='/meals' render={rProps => <Meals {...rProps} />} />
+                    <Route  path = '/mealList' render={rProps => <MealList {...rProps} />} />
                 </Switch>
                  <Ads />
             </div>

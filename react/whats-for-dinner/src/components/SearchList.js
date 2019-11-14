@@ -6,7 +6,7 @@ import {withMeal }from '../context/MealProvider'
 
 const SearchList = (props) => {
     console.log(props)
-    const mappedList = props.options.map(((option, i) => <Meal showButton="true" {...option} key={i}/>))
+    const mappedList = props.options.map(((option, i) => <Meal showButton="true" {...option} key={i} myPath={props.myPath} />))
     return(
         <div className='randomMeal'>
             {mappedList}
