@@ -18,8 +18,15 @@
     border: 2px solid #2E2E1A;
     
 }
+.hidden {
+    display: none;
+}
+.home {
+    width: 80%
+}
+
 .tryAgain {
-    width: 80%;
+    width: 85%;
 }
 a {
     color: #2E2E1A;
@@ -27,7 +34,7 @@ a {
     font-weight:bold;
 }
 .title {
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     text-align: left;
 }
@@ -88,7 +95,7 @@ body {
     background-color: #C3C0AE;
 }
 .cards {
-    border: 10px solid #2E2E1A;
+    border: 5px solid #2E2E1A;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -168,7 +175,7 @@ main {
 .randomMeal{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 45px;
+    grid-gap: 35px;
     padding-bottom: 180px;
     margin-left: 10px;
     margin-right: 10px;
@@ -267,9 +274,10 @@ main {
     }
     
     .randomMeal{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
         padding-bottom: 100px;
+        padding-top: 10px;
     }
     
     .footer {
@@ -295,6 +303,22 @@ main {
     }
     .content {
         width: 90%;
+    }
+    .alert {
+        position: absolute;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        width: 30%;
+        margin-left: 37%;
+        padding: 10px;
+    }
+    .email {
+        width: 96%;
+    }
+    .close {
+        color: white;
+        background-color: black;
     }
     
 }

@@ -29,7 +29,7 @@ class MealProvider extends Component {
             href: '',
             thumbnail: '',
             q:'',
-
+            shouldHide: false
         }
     }
     handleChange = e => {
@@ -70,6 +70,12 @@ class MealProvider extends Component {
             meals: [...prevState.meals, newOpt]
         }), () => localStorage.setItem('favorites', JSON.stringify(this.state.meals)))}
     
+    handleAlertSubmit = () => {
+        this.setState(() => ({
+            shouldHide: true
+        }))
+        
+    }
     
     handleSubmit = e => {
         e.preventDefault()
@@ -106,7 +112,9 @@ class MealProvider extends Component {
                     handleChange: this.handleChange,
                     handleSubmit: this.handleSubmit,
                     handleSave: this.handleSave,
-                    handleOwnSubmit: this.handleOwnSubmit
+                    handleOwnSubmit: this.handleOwnSubmit,
+                    handleAlertSubmit: this.handleAlertSubmit,
+                    shouldHide: this.state.shouldHide
                     
                 }}>
                 {this.props.children}
