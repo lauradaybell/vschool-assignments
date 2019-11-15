@@ -18,9 +18,9 @@ const App = () => {
             <div className='screen'>
                 <Switch className='content'>
                     <Route exact path='/' component={MealHome}/>
-                    <Route path='/ownMealForm' render={rProps => <OwnMealForm {...rProps} />}/>
-                    <Route  path ='/meals' render={rProps => <Meals {...rProps} />} />
-                    <Route  path = '/mealList' render={rProps => <MealList {...rProps} />} />
+                    <Route path='/ownMealForm' component={OwnMealForm}/>
+                    <Route  path ='/meals' component = {Meals} />
+                    <Route  path = '/mealList' component={MealList} />
                 </Switch>
                  <Ads />
             </div>
