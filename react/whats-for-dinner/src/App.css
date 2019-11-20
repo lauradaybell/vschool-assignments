@@ -18,6 +18,9 @@
     border: 2px solid #2E2E1A;
     
 }
+.mealAdContainer {
+    display: none;
+}
 .hidden {
     display: none;
 }
@@ -215,6 +218,7 @@ main {
     .myInput {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
     .randomMeal {
@@ -272,6 +276,9 @@ main {
     .submitButton {
         margin-top: 84px;
     }
+    .myOwnButton {
+        margin-bottom: 0;
+    }
     
     .randomMeal{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -319,6 +326,16 @@ main {
     .close {
         color: white;
         background-color: black;
+    }
+    .mealAdContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+    }
+    .mealAds {
+        width: 30%;
+        margin-left: 6%;
     }
     
 }

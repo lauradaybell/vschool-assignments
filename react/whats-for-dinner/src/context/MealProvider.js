@@ -82,7 +82,6 @@ class MealProvider extends Component {
         e.target.reset()
         const {q} = this.state
 
-        
         foodAxios.get(`https://recipe-puppy.p.rapidapi.com`,{
             params: {
                 q
