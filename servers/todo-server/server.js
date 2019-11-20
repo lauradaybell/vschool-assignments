@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const uuid = require('uuid/v4')
 
+app.use(express.json())
+
 const todos = [
     {
         name: "sweep",
@@ -26,7 +28,7 @@ app.get('/todos/:_id', (req, res) => {
     res.send(foundTodo)
 })
 
-app.post('/todos', (req, res) => {
+app.post("/todos", (req, res) => {
     const newTodo = req.body
     newTodo._id = uuid()
     todos.push(newTodo)
@@ -43,9 +45,10 @@ app.delete('/todos/:_id', (req, res) => {
 
 app.put('/todos/:_id', (req, res) => {
     const todoId = req.params._id
-    const todoToUpdate = todos.findIndex(todo => todo._id === todoId)
+    const todoToUpdate = todos.find(todo => todo._id === todoId)
     const updatedTodo = Object.assign(todoToUpdate, req.body)
     todos.splice(todoToUpdate, 1, updatedTodo)
+    todos.push(updatedTodo)
     res.send(updatedTodo)
 })
 
