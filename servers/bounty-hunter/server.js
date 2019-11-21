@@ -10,15 +10,23 @@ const bounties = [
         firstName: 'George',
         lastName: 'Bert',
         living: true,
-        bountyAmount: 200,
+        bounty: 200,
         type: 'Sith',
+        _id: uuid()
+    },
+    {
+        firstName: 'Hieric',
+        lastName: 'Dae',
+        living: true,
+        bounty: 205,
+        type: 'Jedi',
         _id: uuid()
     },
     {
         firstName: 'Hannah',
         lastName: 'Montana',
         living: true,
-        bountyAmount: 200,
+        bounty: 200,
         type: 'Sith',
         _id: uuid() 
     }
@@ -51,9 +59,10 @@ app.delete("/bounty/:_id", (req, res) => {
 app.put("/bounty/:_id", (req, res) => {
     const bountyId = req.params._id
     const bountyToUpdate = bounties.find(bounty => bounty._id === bountyId)
+    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
     const updatedBounty = Object.assign(bountyToUpdate, req.body)
     console.log(updatedBounty)
-    bounties.splice(bountyToUpdate, 1, updatedBounty)
+    bounties.splice(bountyIndex, 1, updatedBounty)
     res.send (bounties)
 
 })
