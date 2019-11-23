@@ -13,7 +13,8 @@ class ThingProvider extends Component {
             description: '',
             imgUrl: '',
             _id: 1,
-            toggle: true
+            toggle: true,
+            shouldHide: false
         }
     }
     
@@ -50,6 +51,12 @@ class ThingProvider extends Component {
         })
     }
 
+    handleToggle = () => {
+        this.setState({
+            shouldHide: !this.state.shouldHide
+        })
+    }
+
     handleSubmit = e => {
         e.preventDefault()
         e.target.reset()
@@ -80,10 +87,12 @@ class ThingProvider extends Component {
                     title: this.state.title,
                     description: this.state.description,
                     imgUrl: this.state.imgUrl,
+                    shouldHide: this.state.shouldHide,
                     handleChange: this.handleChange,
                     handleSubmit: this.handleSubmit,
                     handleDelete: this.handleDelete,
-                    handleEdit: this.handleEdit
+                    handleEdit: this.handleEdit,
+                    handleToggle: this.handleToggle
                     
                 }}>
                 {this.props.children}

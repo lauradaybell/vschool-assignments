@@ -4,39 +4,33 @@ import {withThing}from '../context/ThingProvider'
 
 
 const UglyThing = (props) => {
-    const myForm = document.getElementById('form')
-    const myData = document.getElementById('info')
-
-    const toggleForm = () => {
-        myForm.classList.toggle('hidden')
-        myData.classList.toggle('updates')
-    }
+    
 
     return (
         <div style={{border: '1px solid black'}} >
-                <div id='info' className='show'>
+                <div className={props.shouldHide ? 'hidden' : null}>
                     <h1>{props.title}</h1>
                     <p>{props.description}</p>
                     <img src={props.imgUrl} alt="pic"/>
                     <button onClick={()=> props.handleDelete(props._id)}>Delete</button>
                     
-                    <button onClick={toggleForm}>Edit</button>
+                    <button onClick={props.handleToggle}>Edit</button>
                 </div>
-                <form className = 'hidden' id='form' onSubmit={props.handleEdit}>
+                <form className = {props.shouldHide ? null : 'hidden'} onSubmit={props.handleEdit}>
                     <input 
                         onChange={props.handleChange} 
                         type='text' 
-                        value={props.title} 
+                        value= '' 
                         placeholder='Title' 
                         name='title'/>
                     <input 
                         onChange={props.handleChange} 
                         type='text' 
-                        value={props.description}
+                        value=''
                         placeholder='description'
                         name='description'/>
                     <input 
-                        onChange={props.handleEdit} 
+                        onChange={props.handleChange} 
                         type='text' 
                         name='imgUrl'
                         value={props.imgUrl} 
