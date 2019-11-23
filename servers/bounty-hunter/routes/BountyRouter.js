@@ -36,7 +36,8 @@ bountyRouter.post("/", (req, res) => {
 })
 
 bountyRouter.put("/:_id", (req, res) => {
-    Bounty.findByIdAndUpdate(req.params._id, req.body,{new: true}, (err, bounty) => {
+   
+    Bounty.findByIdAndUpdate(req.params._id, req.body, {new: true}, (err, bounty) => {
             if (err) {
                 return res.status(500).send(err)
             }

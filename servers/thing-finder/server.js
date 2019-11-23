@@ -1,9 +1,13 @@
 const express = require('express')
 const app = express()
+const morgan= require('morgan')
 
-app.use(express.json)
 
-const inventoryItems = [
+app.use(express.json())
+
+app.use(morgan("dev"))
+
+const inventory= [
     {
         name: "banana",
         type: "food",
@@ -35,3 +39,20 @@ const inventoryItems = [
     }
 ]
 
+// app.get("/", (req, res) => {
+//     res.send(inventory)
+// })
+
+app.get("/inventory", (req, res) => {
+    if(req.query.type){
+        // console.log(req.query.type)
+        res.send(inventory.filter(item => item.type === req.query.type))
+    } else {
+        res.send(inventory)
+    }
+    // console.log(req.params)
+})
+
+app.listen(5000, () => {
+    console.log('server is running')
+})

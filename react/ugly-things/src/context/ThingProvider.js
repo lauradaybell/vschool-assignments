@@ -36,10 +36,18 @@ class ThingProvider extends Component {
         })
     }
     
-    //replace changed item
+    // replace changed item
     handleEdit = e => {
-        e.preventDefault
-        this.state.things
+        e.preventDefault()
+        
+        const updates = {
+            title: this.state.title,
+            description: this.state.description,
+            imgUrl: this.state.imgUrl
+        }
+        this.setState({
+            things: [...this.state.things, updates]
+        })
     }
 
     handleSubmit = e => {
@@ -75,6 +83,7 @@ class ThingProvider extends Component {
                     handleChange: this.handleChange,
                     handleSubmit: this.handleSubmit,
                     handleDelete: this.handleDelete,
+                    handleEdit: this.handleEdit
                     
                 }}>
                 {this.props.children}

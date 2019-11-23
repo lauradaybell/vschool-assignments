@@ -3,7 +3,7 @@ import Bounty from './Bounty'
 
 const BountyList = props => {
 
-    const mappedBounties = props.bounties.map(((bounty, i) => <Bounty {...bounty} key ={bounty._id}  handleDelete={props.handleDelete} handleChange={props.handleChange} handleEditSubmit={props.handleEditSubmit} />))
+    const mappedBounties = props.bounties.map(((bounty) => <Bounty {...bounty} key ={bounty._id}  handleDelete={props.handleDelete} handleChange={props.handleChange} handleEditSubmit={props.handleEditSubmit} />))
 
     return (
         <div className='container'>

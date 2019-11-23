@@ -3,7 +3,8 @@ import {withThing}from '../context/ThingProvider'
 
 const UglyThingForm = props => {
     return (
-        <div className={this.props.type === 'add'? 'submit': 'edit'}>
+        <div >
+        {/* className={this.props.type === 'add'? 'submit': 'edit'}> */}
             <form onSubmit={props.handleSubmit}>
                 <input 
                     onChange={props.handleChange} 

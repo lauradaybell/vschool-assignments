@@ -62,8 +62,8 @@ class Main extends Component {
 
         axios.post('/bounty', newBounty)
             .then(res => {
-                this.getStuff()
                 console.log('Welcome to my lab')
+                this.getStuff()
             })
             .catch(err => console.log(err))
 
@@ -82,9 +82,7 @@ class Main extends Component {
     handleEditSubmit = (myId, myUpdates) => {
         axios.put('/bounty/' + myId, myUpdates)
             .then(res => {
-                this.setState({
-                    bounties: res.data
-                })
+                this.getStuff()
             })
             .catch(err => console.log(err))
     }
