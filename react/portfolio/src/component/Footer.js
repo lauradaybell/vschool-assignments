@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div></div>
+        <footer style={{border: '1px solid black'}}>
+            footer
+        </footer>
     )
 }
 
