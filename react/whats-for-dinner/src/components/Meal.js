@@ -10,9 +10,6 @@ const Meal = (props) => {
     }
     return (
         <div className='cards'>
-
-            
-            
             {
                 props.thumbnail !== ''? <img className= 'returnedImg' src={props.thumbnail} alt="pic"/> : <img className='returnedImg' src="http://www.soidergi.com/wp-content/uploads/ph/photostock-vector-cartoon-cute-stove-oven-appliance-vector-illustration.jpg" alt='pic'/>
             }
