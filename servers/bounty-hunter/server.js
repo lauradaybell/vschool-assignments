@@ -1,37 +1,11 @@
 const express = require('express');
 const app = express();
-// const uuid = require('uuid/v4') 
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 app.use(express.json())
 
-// const bounties = [
-//     {
-//         firstName: 'George',
-//         lastName: 'Bert',
-//         living: true,
-//         bounty: 200,
-//         type: 'Sith',
-//         _id: uuid()
-//     },
-//     {
-//         firstName: 'Hieric',
-//         lastName: 'Dae',
-//         living: true,
-//         bounty: 205,
-//         type: 'Jedi',
-//         _id: uuid()
-//     },
-//     {
-//         firstName: 'Hannah',
-//         lastName: 'Montana',
-//         living: true,
-//         bounty: 200,
-//         type: 'Sith',
-//         _id: uuid() 
-//     }
-// ] remove
+
 
 app.use(morgan("dev"))
 

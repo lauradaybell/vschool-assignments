@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body {
+    background-color: #d3d3d373;
+}
+
+.navStyle {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.aboutMe {
+    padding: 70px;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ccc9c9;
+}
+.linkBtn {
+    padding: 10px;
+    border-radius: 33px;
+    box-shadow: 11px -9px 23px #553F80 inset;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.resume > a > button {
+    border-radius: 33px;
+    box-shadow: 11px -9px 23px #553F80 inset;
+    font-size: 22px;
+    padding: 20px;
+}
+
+
+
+.skills {
+    padding: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons > * {
+    margin: 50px;
+}
+
+
+footer {
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url("https://wallpaperaccess.com/full/1251284.jpg")
+}
+
+header {
+    padding: 20px;
+    background-image: url("https://wallpaperaccess.com/full/1251284.jpg");
+    border: 1px solid #3E2C71;
+    color: #b3b1b1;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.skills > h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    
+}
+.abtMe {
+    text-align: center;
+    padding: 20px;
+    color: #3E2D6F;
+}
+.skillTitle {
+    color: #3E2D6F;
+}
+
+.skillsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+h3 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.contact {
+    text-align: center;
+    color: #b3b1b1;
+    padding: 10px;
+    background-image: url("https://wallpaperaccess.com/full/1251284.jpg")
+}
+
+h4 {
+    text-align: center;
+}
+
+.homeRoute {
+    color: #040404;
+}
+.darkRoute {
+    color: white;
+}
+.lightRoute {
+    color: #b3b1b1;
+    
+}
+.medRoute {
+    color:#d8d7d7;
+}
+.picStyle {
+    width: 300px;
+    display: flex;
+    margin: auto;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    background-color: #ccc9c9;
+    width: 100vw;
+}
+.projDesc {
+    font-size: 18px;
+    
+}
+.projTxt {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.lang{
+    font-size: 20px;
+    color: #3E2D6F;
+}
+.projTitle {
+    text-align:center;
+    color: #3E2D6F;
+}
+h2 {
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .project {
+        flex-wrap: wrap;
+    }
+    .icons {
+        font-size: 12px;
+    }
+}
