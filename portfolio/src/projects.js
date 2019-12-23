@@ -27,7 +27,7 @@ export const projects = {
         {
             "title": "What's For Dinner",
             "desc": "The user can save their favorite meals or use an API to search for meals which can then be saved as favorites.",
-            "link": "whats-for-dinner-laura.surge.sh",
+            "link": "https://whats-for-dinner-laura.surge.sh",
             "langUsed": [
                 "Reactjs, Axios, CSS"
             ]
