@@ -83,7 +83,7 @@ footer {
 }
 
 header {
-    padding: 20px;
+    /* padding: 20px; */
     background-image: url("https://wallpaperaccess.com/full/1251284.jpg");
     color: #b3b1b1;
     box-shadow: 0px 5px 15px #A0A0A0;
@@ -203,6 +203,30 @@ h2 {
         flex-wrap: wrap;
     }
     .icons {
-        font-size: 12px;
+        font-size: 8px;
     }
+}
+@media screen and (max-width: 760px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 69px 90px 100px;
+        width: 100%;
+    }
+    .headerContact {
+        text-align: center;
+        grid-row: 3
+    }
+    .headerContact>h4 {
+        text-align: center;
+        
+    }
+    .headerIcons {
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        color: black;
+        grid-row: 1/2
+    }
+
 }
