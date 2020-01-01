@@ -5,7 +5,7 @@ export const projects = {
             "desc": "Full Stack social media type platform- user can draw a picture to be posted, add comments to posts, and delete their own posts. Project requiring user auth.",
             "link": "https://my-guess-what.herokuapp.com/",
             "langUsed":[
-                "Reactjs, MongoDB, Mongoose, Express, React Canvas Draw, Axios, CSS"
+                "React.js, MongoDB, Mongoose, Express, React Canvas Draw, Axios, CSS"
             ]
         },
         {
@@ -13,7 +13,7 @@ export const projects = {
             "desc": "Project made with a small group (2 others)- user can choose a character, find clues, guess who the murderer and weapon are.  Full stack project using MongoDB/Mongoose/Express for the back end and middleware.",
             "link": "https://my-clue.herokuapp.com/",
             "langUsed":[
-                "Reactjs, MongoDB, Mongoose, Express, Axios, Particles, CSS"
+                "React.js, MongoDB, Mongoose, Express, Axios, Particles, CSS"
             ]
         },
         {
@@ -21,7 +21,7 @@ export const projects = {
             "desc": "Full stack project using CRUD. User may place a bounty, make changes to the bounty, or delete it.",
             "link": "https://bounty-hunter-laura.herokuapp.com/",
             "langUsed": [
-                "Reactjs, MongoDB, Mongoose, Express, Axios, CSS"
+                "React.js, MongoDB, Mongoose, Express, Axios, CSS"
             ]
         },
         {
@@ -29,7 +29,7 @@ export const projects = {
             "desc": "The user can save their favorite meals or use an API to search for meals which can then be saved as favorites.",
             "link": "https://whats-for-dinner-laura.surge.sh",
             "langUsed": [
-                "Reactjs, Axios, CSS"
+                "React.js, Axios, CSS"
             ]
         }
     ]
