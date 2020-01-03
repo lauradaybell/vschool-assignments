@@ -38,10 +38,10 @@ body {
 }
 
 .resume > a > button {
-    border-radius: 33px;
+    border-radius: 21px;
     /* box-shadow: 11px -9px 23px #553F80 inset; */
     font-size: 22px;
-    padding: 20px;
+    padding: 16px;
     background-color: #553F80;
     color:#ccc9c9;
 }
