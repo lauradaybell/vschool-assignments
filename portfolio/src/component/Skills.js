@@ -11,6 +11,8 @@ const Skills = () => {
                     <h4> React</h4>
                     <h4>HTML</h4>
                     <h4>CSS</h4>
+                    <h4>SCSS</h4>
+                    <h4>Cypress</h4>
                 </div>
                 <div style={{border:'1px solid block'}}>
                     <h3>Backend:</h3> 
