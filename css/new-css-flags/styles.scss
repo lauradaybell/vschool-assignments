@@ -1,0 +1,158 @@
+section {
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    .france {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid black;
+        .one {
+            background-color: #002495;
+        }
+        .two {
+            background-color: #FFFFFF;
+        }
+        .three {
+            background-color: #ED2938;
+        }
+    }
+    .germany {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: 1px solid black;
+        .one {
+            background-color: #000000;
+        }
+        .two {
+            background-color: #DE0002;
+        }
+        .three {
+            background-color: #FFCE00;
+        }
+    }
+    .madagascar {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border: 1px solid black;
+        .one {
+            background-color: #FFFFFF
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            .two {
+                background-color: #FC3E32;
+            }
+            .three {
+                background-color: #007E39;
+            }
+        }
+    }
+    .switzerland {
+        background-color: #FF0002;
+        position: relative;
+        border: 1px solid black;
+        .one, .two {
+            background-color: #FFFFFF;
+        }
+        .one {
+            position: absolute;
+            z-index: 1;
+            width: 32%;
+            height: 16%;
+            top: 41%;
+            left: 33%;
+        }
+        .two {
+            position: absolute;
+            z-index: 1;
+            height: 48%;
+            width: 10%;
+            top: 25%;
+            left: 43.5%;
+        }
+    }
+    .sweden {
+        background-color: #0269A6;
+        position: relative;
+        .one {
+            background-color: #FECC00;
+            position: absolute;
+            height: 100%;
+            z-index: 1;
+            width: 10%;
+            left: 20%;
+        }
+        .two {
+            background-color: #FECC00;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            height: 21%;
+            top: 39%;
+        }
+    }
+    .gambia {
+        background-color: #FFFFFF;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        border: 1px solid black;
+        .one {
+            background-color: #CE1127;
+        }
+        .two {
+            background-color: #0D1D8B;
+        }
+        .three {
+            background-color: #3B7827;
+        }
+    }
+    .japan {
+        background-color: #FFFFFF;
+        border: 1px solid black;
+        position: relative;
+        .one {
+            background-color: #BC022C;
+            height: 58%;
+            border: 1px solid #BC022C;
+            border-radius: 50%;
+            width: 36%;
+            position: absolute;
+            top: 23%;
+            left: 32%;
+        }
+    }
+    .niger {
+        position: relative;
+        border: 1px solid black;
+        .container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            .one {
+                background-color: #E15307;
+            }
+            .two {
+                background-color: #FFFFFF;
+            }
+            .three {
+                background-color: #10AF2A;
+            }
+        }
+        .four {
+            background-color: #E15307;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 28%;
+            width: 20%;
+            top: 36%;
+            left: 40%;
+        }
+    }
+}

@@ -1,0 +1,205 @@
+section {
+  width: 75%;
+  height: 100vh;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+section .france {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+
+section .france .one {
+  background-color: #002495;
+}
+
+section .france .two {
+  background-color: #FFFFFF;
+}
+
+section .france .three {
+  background-color: #ED2938;
+}
+
+section .germany {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+
+section .germany .one {
+  background-color: #000000;
+}
+
+section .germany .two {
+  background-color: #DE0002;
+}
+
+section .germany .three {
+  background-color: #FFCE00;
+}
+
+section .madagascar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  border: 1px solid black;
+}
+
+section .madagascar .one {
+  background-color: #FFFFFF;
+}
+
+section .madagascar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+section .madagascar .container .two {
+  background-color: #FC3E32;
+}
+
+section .madagascar .container .three {
+  background-color: #007E39;
+}
+
+section .switzerland {
+  background-color: #FF0002;
+  position: relative;
+  border: 1px solid black;
+}
+
+section .switzerland .one, section .switzerland .two {
+  background-color: #FFFFFF;
+}
+
+section .switzerland .one {
+  position: absolute;
+  z-index: 1;
+  width: 32%;
+  height: 16%;
+  top: 41%;
+  left: 33%;
+}
+
+section .switzerland .two {
+  position: absolute;
+  z-index: 1;
+  height: 48%;
+  width: 10%;
+  top: 25%;
+  left: 43.5%;
+}
+
+section .sweden {
+  background-color: #0269A6;
+  position: relative;
+}
+
+section .sweden .one {
+  background-color: #FECC00;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  width: 10%;
+  left: 20%;
+}
+
+section .sweden .two {
+  background-color: #FECC00;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 21%;
+  top: 39%;
+}
+
+section .gambia {
+  background-color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  border: 1px solid black;
+}
+
+section .gambia .one {
+  background-color: #CE1127;
+}
+
+section .gambia .two {
+  background-color: #0D1D8B;
+}
+
+section .gambia .three {
+  background-color: #3B7827;
+}
+
+section .japan {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  position: relative;
+}
+
+section .japan .one {
+  background-color: #BC022C;
+  height: 58%;
+  border: 1px solid #BC022C;
+  border-radius: 50%;
+  width: 36%;
+  position: absolute;
+  top: 23%;
+  left: 32%;
+}
+
+section .niger {
+  position: relative;
+  border: 1px solid black;
+}
+
+section .niger .container {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+section .niger .container .one {
+  background-color: #E15307;
+}
+
+section .niger .container .two {
+  background-color: #FFFFFF;
+}
+
+section .niger .container .three {
+  background-color: #10AF2A;
+}
+
+section .niger .four {
+  background-color: #E15307;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 28%;
+  width: 20%;
+  top: 36%;
+  left: 40%;
+}
+/*# sourceMappingURL=styles.css.map */
