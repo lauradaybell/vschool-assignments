@@ -1,0 +1,25 @@
+.box, .click, .down, .up, .dbl, .scroll {
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid black;
+    margin: 50vh auto;
+}
+/* .box:hover {
+    background: blue;
+} */
+
+.down {
+    background: red;
+}
+
+.up {
+    background: yellow;
+}
+
+.dbl {
+    background: green;
+}
+
+.scroll {
+    background: orange;
+}
