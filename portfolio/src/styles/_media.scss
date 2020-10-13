@@ -1,0 +1,59 @@
+@media only screen and (min-width: 600px) {
+    header {
+        a {
+            padding: 0px 25px;
+        }
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        div {
+            height: 80vh;
+        }
+    }
+
+    .projectDiv {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projTxt {
+        width: 60%;
+    }
+
+    .icons {
+        a {
+            margin: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        a {
+            padding: 0px 15px;
+        }
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+
+        div {
+            height: 60vh;
+        }
+    }
+
+    .projectDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .projTxt {
+        width: 90%;
+    }
+
+    .icons {
+        a {
+            margin: 15px;
+        }
+    }
+}

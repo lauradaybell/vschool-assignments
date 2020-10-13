@@ -1,0 +1,281 @@
+@media only screen and (min-width: 600px) {
+  header a {
+    padding: 0px 25px;
+  }
+  .skills {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skills div {
+    height: 80vh;
+  }
+  .projectDiv {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .projTxt {
+    width: 60%;
+  }
+  .icons a {
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header a {
+    padding: 0px 15px;
+  }
+  .skills {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .skills div {
+    height: 60vh;
+  }
+  .projectDiv {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .projTxt {
+    width: 90%;
+  }
+  .icons a {
+    margin: 15px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+header {
+  padding: 10px;
+  background-color: #131212;
+  color: #b3b1b1;
+  -webkit-box-shadow: 0px 5px 15px #A0A0A0;
+          box-shadow: 0px 5px 15px #A0A0A0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header a {
+  color: #b3b1b1;
+}
+
+.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 70px;
+}
+
+.aboutMe button {
+  padding: 10px;
+  margin: 20px;
+}
+
+.aboutMe h1 {
+  padding: 10px;
+}
+
+.aboutMe h2 {
+  padding-bottom: 20px;
+}
+
+.aboutMe p {
+  text-align: center;
+  width: 80%;
+}
+
+.logo {
+  width: 175px;
+  height: 175px;
+  background-image: url("../images/LauraDaybellLogo.png");
+  background-size: 100% 100%;
+}
+
+.skills {
+  background-color: #131212;
+  color: #b3b1b1;
+  display: -ms-grid;
+  display: grid;
+}
+
+.skills section {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #b3b1b1;
+  margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px;
+}
+
+.skills div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+}
+
+.skills div h3 {
+  text-align: center;
+  padding: 15px;
+}
+
+.skills div h4 {
+  display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.skills div:hover h4 {
+  display: block;
+}
+
+.portfolio {
+  margin: 50px 0px;
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+.projectDiv {
+  display: -ms-grid;
+  display: grid;
+}
+
+.project {
+  background-color: black;
+  margin: 15px;
+}
+
+.project button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin: auto;
+  display: block;
+}
+
+.projTxt {
+  background-color: rgba(211, 211, 211, 0.9);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.projTxt h3 {
+  text-align: center;
+}
+
+.projTxt p {
+  padding: 5px;
+}
+
+.projDesc {
+  font-size: 18px;
+}
+
+.lang {
+  font-size: 20px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  background-color: #131212;
+  text-align: center;
+  color: #b3b1b1;
+  padding: 25px;
+}
+
+footer a {
+  color: #b3b1b1;
+  padding: 5px;
+}
+
+footer p {
+  padding: 5px;
+}
+
+.toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 20px 5px darkgray;
+          box-shadow: 0px 0px 20px 5px darkgray;
+}
+/*# sourceMappingURL=styles.css.map */
