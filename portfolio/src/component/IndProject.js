@@ -18,18 +18,13 @@ const IndProject = (props) => {
     }
     
     return(
-        <div>
-            
-            <div className="project">
-                <img className="picStyle" src={image} alt="pic" />
-                <div className="projTxt">
-                    <h3 className="projTitle">{title}</h3>
-                    <p className="projDesc">{desc}</p>
-                    <p className="lang">{langUsed}</p>
-                    <a target="_blank" rel="noopener noreferrer" href={link}><button className="linkBtn" >Launch Page</button></a>
-                </div>
+        <div className="project" style={{backgroundImage: `url(${image})`, backgroundSize: '100%', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
+            <div className="projTxt">
+                <h3>{title}</h3>
+                <p className="projDesc">{desc}</p>
+                <p className="lang">{langUsed}</p>
+                <a target="_blank" rel="noopener noreferrer" href={link}><button className="linkBtn" >Launch Page</button></a>
             </div>
-            
         </div>
     )
 }

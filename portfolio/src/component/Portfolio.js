@@ -6,9 +6,13 @@ const Portfolio = () => {
     
     const mappedProjects = projects.projects.map((proj, i) => <IndProject {...proj} key={i} />)
     return (
-       <div className='portfolio'>
-           {mappedProjects}
-       </div>
+        <div className='portfolio'>
+            <h1>Projects</h1>
+            <div className='projectDiv'>
+                {mappedProjects}
+            </div>
+        </div>
+       
     )
 }
 
